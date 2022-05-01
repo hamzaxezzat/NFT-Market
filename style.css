@@ -1,0 +1,141 @@
+/* 
+Reseting default styles 
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #020824;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: #fff;
+}
+h1,
+h2 {
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+}
+h2:not(.explore h2, .trial h2, footer h2)::before,
+.explore h3::before {
+    content: "";
+    background: linear-gradient(
+        90deg,
+        rgba(72, 252, 139, 0) 0%,
+        #48fc8b 50%,
+        rgba(72, 252, 139, 0) 100%
+    );
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.5em;
+    width: 100%;
+    height: 0.1em;
+}
+h3 {
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+}
+p,
+span {
+    margin: 0;
+    columns: #eee;
+    font-size: 0.9em;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+small {
+    color: #eee;
+}
+ul {
+    list-style-type: none;
+    padding: 0%;
+}
+section,
+footer {
+    margin: 8em 0;
+}
+header {
+    background: url(img/background.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.btn {
+    padding: 0.7em 2em;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.btn-primary {
+    background: linear-gradient(90deg, #48fc8b, #1de7ea);
+    color: #111;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #1de7ea;
+}
+.btn-secondary {
+    border: 1px #1de7ea solid;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #fff;
+    color: #111;
+}
+
+.btn-group .btn {
+    margin: 1em;
+}
+
+/* Styling Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0;
+}
+nav a {
+    text-transform: uppercase;
+}
+.brand {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+nav li {
+    display: inline-block;
+    margin: 0 0.7em;
+}
+.search {
+}
+
+/* Customise */
+
+.card {
+    /* background-color: transparent !important; */
+}
