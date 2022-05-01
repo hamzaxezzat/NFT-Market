@@ -132,10 +132,98 @@ nav li {
     margin: 0 0.7em;
 }
 .search {
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 8em;
+    transition: 0.3s;
+}
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    display: none;
+}
+.menu .btn-primary {
+    display: none;
+}
+/* Styling Middle part of the header */
+.header-body {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0 1em 0;
+}
+.header-body div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+h1 {
+    font-size: 4.5em;
+}
+.header-body p {
+    max-width: 20em;
+    text-transform: uppercase;
+    line-height: 23px;
+    font-size: 0.7em;
+}
+.header-body p:nth-child(1) {
+    text-align: right;
+}
+.bar {
+    width: 0.4em;
+    height: 4em;
+    background: linear-gradient(
+        0deg,
+        rgba(72, 252, 139, 0) 0%,
+        #48fc8b 50%,
+        rgba(72, 252, 139, 0) 100%
+    );
+    filter: drop-shadow(0 0 0.5em #48fc8b);
+    margin: 0 2em;
+}
+.grid-img {
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* Customise */
+.header-body .btn,
+.trial .btn {
+    font-size: 1.1em;
+}
 
-.card {
-    /* background-color: transparent !important; */
+.header-body .btn-group {
+    margin: 3em 0;
+}
+/* Services Section */
+.services .heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+}
+.cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 10em 0 4em 0;
+}
+
+.services .card {
+    padding: 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    background: rgba(127, 127, 127, 25);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+}
+.services .card img {
+    width: 8em;
+    margin: -5em 0 1em 0;
 }
