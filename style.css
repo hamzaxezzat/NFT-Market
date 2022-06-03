@@ -546,3 +546,73 @@ footer hr {
 footer p {
     margin: 1em 0;
 }
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .menu-btn {
+        display: block;
+    }
+    nav .menu {
+        background: #020824;
+        position: absolute;
+        left: 0;
+        top: 5em;
+        height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        overflow: hidden;
+        z-index: 9;
+    }
+    nav .btn-primary {
+        display: none;
+    }
+    .menu .btn-primary {
+        display: block;
+    }
+    /* Open Class For Javascript Toggle */
+    nav .menu-open {
+        opacity: 1;
+        height: 20em;
+        overflow: visible;
+    }
+    nav .menu li {
+        margin: 1em 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    .header-body div div {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-body p {
+        text-align: center !important;
+    }
+    .bar {
+        margin: 2em 0;
+    }
+    .services .cards {
+        flex-direction: column;
+    }
+    .services .card {
+        margin: 4em 0 1em 0;
+    }
+    .services .heading,
+    .explore {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        height: 20em;
+    }
+}
+@media screen and (max-width: 950px) {
+    .featured .cards {
+        flex-direction: column;
+    }
+}
